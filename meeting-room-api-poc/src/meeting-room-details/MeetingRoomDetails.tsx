@@ -2,7 +2,7 @@ import React from "react";
 import { MeetingRoomDetailsProps } from "./MeetingRoomDetailsTypes";
 
 class MeetingRoomDetailsPage extends React.Component<MeetingRoomDetailsProps> {
-    render(): JSX.Element {
+    render(): React.ReactNode {
         return (
             <>
                 <h2>Chosen one</h2>

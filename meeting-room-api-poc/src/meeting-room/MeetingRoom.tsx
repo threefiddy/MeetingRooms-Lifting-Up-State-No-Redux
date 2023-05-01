@@ -15,20 +15,13 @@ class MeetingRoomsPage extends React.Component<MeetingRoomProps, MeetingRoomStat
       .then(
         (result) => {
           this.setState({
-            isLoaded: true,
             meetingRooms: result
-          });
-        },
-        (error) => {
-          this.setState({
-            isLoaded: true,
-            error
           });
         }
       )
   }
 
-  render(): JSX.Element {
+  render(): React.ReactNode {
     const onclick = (e: React.MouseEvent, selectedMeetingRoom: IMeetingRoom) => {
       e.preventDefault();
       this.props.onSelectedMeetingRoomChange(selectedMeetingRoom)
@@ -55,4 +48,4 @@ class MeetingRoomsPage extends React.Component<MeetingRoomProps, MeetingRoomStat
   }
 }
 
-export { MeetingRoomsPage as MeetingRoomsPage };
+export { MeetingRoomsPage as MeetingRoomListPage };

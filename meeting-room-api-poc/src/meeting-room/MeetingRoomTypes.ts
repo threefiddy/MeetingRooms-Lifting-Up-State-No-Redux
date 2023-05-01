@@ -8,12 +8,8 @@ export interface IMeetingRoom {
 export type MeetingRoomProps = {
   onSelectedMeetingRoomChange: (selectedMeetingRoom?: IMeetingRoom) => void;
   meetingRooms?: IMeetingRoom[];
-  
 }
 
 export type MeetingRoomState = {
-  selectedMeetingRoom?: IMeetingRoom
-  isLoaded?: boolean;
   meetingRooms?: IMeetingRoom[];
-  error?: any
 }
